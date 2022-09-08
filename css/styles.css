@@ -32,13 +32,14 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: var(--body-fonts);
     color: var(--light-color);
     font-size: var(--medium-fontsize);
-    background-color: skyblue;
+    background-color: rgb(39, 62, 71);
     line-height: 3.2rem;
 }
 
@@ -156,13 +157,10 @@ img{
 }
 
 /*cover styling*/
-.main{
-    overflow: hidden;
-}
-
 .cover{
     position: relative;
     height: 100rem;
+    overflow: hidden;
 }
 
 .cover::after{
@@ -214,7 +212,7 @@ img{
     margin-bottom: var(--margin-bottom-md);
 }
 
-.mainHeading{
+.coverHeading{
     font-size: var(--extralarge-fontsize);
 }
 
@@ -245,6 +243,36 @@ img{
 }
 
 .scrollImgDown{
-    top: 65%;    
+    top: 55%;    
     z-index: 110;
 }
+
+.card{
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
