@@ -257,6 +257,8 @@ img{
 .card{
     background: none;
     gap: 6.4rem;
+    margin: 50px;
+    padding: 50px;
 }
 
 .cardInfo{
@@ -319,6 +321,19 @@ img{
     margin-bottom: var(--margin-bottom-sm);
 }
 
+.brandInfo, .footerEndGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+.brandInfo{
+    order: 1;
+}
+
+.footerEnd{
+    order: 0;
+    gap: var(--margin-bottom-sm);
+}
 
 
 
