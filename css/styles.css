@@ -266,7 +266,7 @@ img{
 .number{
     font-size: 10rem;
     font-weight: bold;
-    opacity: -1;
+    opacity: 0.1;
     position: absolute;
     left: -2rem;
     z-index: -1;
@@ -291,6 +291,33 @@ img{
     color: var(--cream-color);
 }
 
+.footer{
+    padding: 4rem 0 5rem;
+}
+
+.footerContainer{
+    row-gap: 3.2rem;
+}
+
+.brandInfo > *{
+   margin-bottom: var(--margin-bottom-md);
+}
+
+.copyright{
+    font-size: var(--small-fontsize);
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+
+.footerEndTitle{
+   color: var(--cream-color);
+   font-size: 2rem;
+   margin-bottom: var(--margin-bottom-md);
+}
+
+.footerLink{
+    margin-bottom: var(--margin-bottom-sm);
+}
 
 
 
