@@ -5,7 +5,7 @@
 :root{
     --light-color: #fff;
     --dark-color: black;
-    --cream-color: #fbd784;
+    --cream-color: rgb(24, 168, 224);
 
     --title-fonts: 'Gideon Roman', cursive;
     --body-fonts: 'Poppins', sans-serif;
@@ -40,7 +40,7 @@ body{
     font-family: var(--body-fonts);
     color: var(--light-color);
     font-size: var(--medium-fontsize);
-    background-color: rgb(39, 62, 71);
+    background-color: rgb(146, 99, 37);
     line-height: 3.2rem;
 }
 
@@ -100,7 +100,7 @@ img{
     padding: 5rem;
     border-radius: 0.8rem;
     transition: .5s ease;   
-    background-color: rgba(222, 184, 135, 0.9);
+    background-color: rgba(109, 61, 6, 0.9);
 }
 
 .menuToggle{
@@ -260,6 +260,7 @@ img{
     gap: 6.4rem;
     margin: 20px;
     padding: 10px;
+    box-shadow: none;
 }
 
 .cardInfo{
@@ -369,7 +370,58 @@ img{
     .cardImg{
         grid-column: 1/-1;
         width: 60rem;
+        height: 42rem;
+        justify-self: center;
     }
+
+    .cardInfo{
+        grid-column: 1/-1;
+    }
+
+    .number{
+        font-size: 20rem;
+        left: -8rem;
+    }
+
+    .textLine{
+        margin-left: 9.5rem;
+    }
+
+    .textLine::before{
+        width: 7.2rem;
+        left: -9rem;
+    }
+
+    .cardHeading{
+        font-size: 6.4rem;
+    }
+
+
+    .footerContainer{
+        grid-template-columns: .75fr 1fr;
+        column-gap: 6.4rem;
+    }
+
+    .brandInfo{
+        order: 0;
+        max-width: 30rem;
+    }
+
+    .footerEnd{
+        order: 1;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 6.4rem;
+    }
+
+    .navLink:last-child{
+        margin-bottom: 0;
+    }
+
+    .copyright{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
 }
 
 
