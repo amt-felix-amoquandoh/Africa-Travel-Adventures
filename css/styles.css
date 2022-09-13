@@ -245,7 +245,8 @@ img{
 
 .scrollImgDown{
     top: 55%;    
-    z-index: 110;
+    z-index: 80;
+    margin-top: 30px;
 }
 
 
@@ -291,6 +292,11 @@ img{
 }
 
 .scrollDownBtn{
+    color: var(--cream-color);
+    margin-top: -100px;
+}
+
+.scrollMoreBtn{
     color: var(--cream-color);
 }
 
@@ -340,7 +346,19 @@ img{
  /** tablet view **/
  @media (min-device-width: 700px) 
   and (max-device-width: 1280px)
-  and (-webkit-min-device-pixel-ratio: 1){}
+  and (-webkit-min-device-pixel-ratio: 1){
+    #carImg {
+        height: 48vh;
+      }
+  
+      #carImg1 {
+          height: 48vh;
+        }
+  
+        .tourInfo{
+          margin-top: -12rem;        
+      }
+  }
 
 
 
@@ -484,7 +502,31 @@ and (-webkit-min-device-pixel-ratio: 2){
     .navAccLink{
         display: inline-flex;
         align-items: center;
+        gap: 1rem;
+        padding: 0;
     }
+
+    .navAccLink i{
+       font-weight: 300;
+    }
+
+    .btn, .btn i, .navUlLink{
+        transition: transform .5s;
+    }
+
+    .btn:hover, .navUlLink:hover{
+        color: var(--cream-color);
+    }
+
+    .scrollMoreBtn:hover{
+        transform: translateX(1rem);
+    }
+
+    .scrollDownBtn:hover{
+        transform: translateY(1rem);
+    }
+
+
 }
 
 
