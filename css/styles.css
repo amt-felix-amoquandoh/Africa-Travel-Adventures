@@ -450,6 +450,43 @@ and (-webkit-min-device-pixel-ratio: 2){
 
 }
 
+@media screen and (min-width: 991px){
+    :root{
+        --extralarge-fontsize: 7.5rem;
+    }
+
+    .navMenu{
+        position: initial;
+        transform: initial;
+        width: initial;
+        background-color: initial;
+        padding: initial;
+        border-radius: initial;
+        transition: initial;
+        margin-left: initial;
+    }
+
+    .navMenu, .navUl{
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .smallScreenHide{
+        display: block;
+    }
+
+    .navUlLink{
+        display: inline-block;
+        font-weight: bold;
+        padding: .8rem 2.4rem;
+    }
+
+    .navAccLink{
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
 
 
 
