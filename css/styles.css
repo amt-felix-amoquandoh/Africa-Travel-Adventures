@@ -40,7 +40,7 @@ body{
     font-family: var(--body-fonts);
     color: var(--light-color);
     font-size: var(--medium-fontsize);
-    background-color: rgb(146, 99, 37);
+    background-color: rgb(235, 184, 117);
     line-height: 3.2rem;
 }
 
@@ -297,10 +297,7 @@ img{
 
 .footer{
     padding: 4rem 0 5rem;
-}
-
-.footerContainer{
-    row-gap: 3.2rem;
+    background-color: rgb(24, 168, 224);
 }
 
 .brandInfo > *{
@@ -314,8 +311,9 @@ img{
 }
 
 .footerEndTitle{
-   color: var(--cream-color);
+   color: rgba(75, 41, 2, 0.9);
    font-size: 2rem;
+   font-weight: bolder;
    margin-bottom: var(--margin-bottom-md);
 }
 
