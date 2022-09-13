@@ -40,7 +40,7 @@ body{
     font-family: var(--body-fonts);
     color: var(--light-color);
     font-size: var(--medium-fontsize);
-    background-color: rgb(235, 184, 117);
+    background-color: rgb(94, 53, 0);
     line-height: 3.2rem;
 }
 
@@ -251,14 +251,13 @@ img{
 
 .tourInfo{
     position: relative;
-    margin-top: -12rem;
+    margin-top: -8rem;
     z-index: 500;
 }
 
 .card{
     background: none;
-    gap: 6.4rem;
-    margin: 20px;
+    gap: 4.4rem;
     padding: 10px;
     box-shadow: none;
 }
@@ -336,7 +335,36 @@ img{
 }
 
 
+
+  /** media queries for responsive interface **/
+ /** tablet view **/
+ @media (min-device-width: 700px) 
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 1){}
+
+
+
 /* media queries*/
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 700px)
+and (-webkit-min-device-pixel-ratio: 2){
+    #carImg {
+      height: 48vh;
+    }
+
+    #carImg1 {
+        height: 48vh;
+      }
+
+      .tourInfo{
+        margin-top: -12rem;        
+    }
+
+}
+
+
+/* general devices */
 @media screen and (min-width: 768px){
     :root{
         --font-size-xl: 5.5rem;
@@ -357,7 +385,7 @@ img{
 
     .scrollImgCenter{
         top: 30%;
-    }
+    }   
 
     .card{
         grid-template-columns: repeat(2,1fr);
