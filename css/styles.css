@@ -286,7 +286,7 @@ img{
     object-position: 50% 100%;
 }
 
-.cardHeading{
+.cardDescription{
    line-height: 2.8rem;
    margin-bottom: var(--margin-bottom-md);
 }
@@ -489,6 +489,10 @@ and (-webkit-min-device-pixel-ratio: 2){
         gap: 0;
     }
 
+    .largeScreenHide, .menuToggle{
+       display: none;
+    }
+
     .smallScreenHide{
         display: block;
     }
@@ -506,11 +510,11 @@ and (-webkit-min-device-pixel-ratio: 2){
         padding: 0;
     }
 
-    .navAccLink i{
+    .navAccLink{
        font-weight: 300;
     }
 
-    .btn, .btn i, .navUlLink{
+    .btn, .btn, .navUlLink{
         transition: transform .5s;
     }
 
@@ -526,7 +530,22 @@ and (-webkit-min-device-pixel-ratio: 2){
         transform: translateY(1rem);
     }
 
-    /* .tourInfo{
+    .scrollImgCenter{
+        top: 40%;    
+    }
+    
+    .scrollImgDown{
+        top: 60%;
+    }
+
+    .coverData{
+        top: 45%;
+        max-width: 79rem;
+        justify-self: center;
+    }
+
+
+    .tourInfo{
         margin-top: 0;
         padding-top: 20rem;
     }
@@ -543,10 +562,17 @@ and (-webkit-min-device-pixel-ratio: 2){
         justify-self: end;
     }
 
-    .cardHeading{
+    .cardInfo{
        grid-column: initial;
        align-self: center;
-    } */
+    }
+    
+    .order{
+        order: 0;
+        justify-self: start;
+    }
+    
+    
 }
 
 
